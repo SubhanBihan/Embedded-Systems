@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "driverlib.h": "c",
+        "adc.h": "c",
+        "hal_adc.h": "c"
+    }
+}

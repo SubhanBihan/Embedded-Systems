@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "graphics_hal.h": "c",
+        "grlib.h": "c"
+    }
+}

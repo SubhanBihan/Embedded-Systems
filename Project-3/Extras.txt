@@ -1,0 +1,37 @@
+
+// C4 Note
+note_t note = Note_Construct(NOTE_C4, 1000, 0.5);
+
+buzzer_timer = SWTimer_construct(note.duration_ms);
+Buzzer_Play(&note);
+SWTimer_start(&buzzer_timer);
+
+if (SWTimer_expired(&buzzer_timer)) Buzzer_Stop();
+
+switch (gs_p->mode) {
+    case BUY:
+        
+        break;
+    
+    case SELL:
+        
+        break;
+}
+
+switch (hal_p->JS.TappedY) {
+    case UP:
+        option_num = CircularDecrement(option_num, NUM_OPTIONS);
+        break;
+    case DOWN:
+        option_num = CircularIncrement(option_num, NUM_OPTIONS);
+        break;
+}
+
+switch (hal_p->JS.TappedY) {
+    case UP:
+        bld_opn = CircularDecrement(bld_opn, NUM_OPTIONS);
+        break;
+    case DOWN:
+        bld_opn = CircularIncrement(bld_opn, NUM_OPTIONS);
+        break;
+}

@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "application.h": "c",
+        "hal.h": "c",
+        "grlib.h": "c",
+        "bit": "c",
+        "compare": "c",
+        "limits": "c",
+        "new": "c",
+        "type_traits": "c"
+    }
+}
